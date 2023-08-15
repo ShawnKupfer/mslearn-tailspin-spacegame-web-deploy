@@ -63,9 +63,6 @@ stages:
         zipAfterPublish: true
 
     - publish: '$(Build.ArtifactStagingDirectory)'
-<<<<<<< HEAD
-      artifact: drop
-=======
       artifact: drop
 
 - stage: 'Deploy'
@@ -90,4 +87,3 @@ stages:
               azureSubscription: 'Resource Manager - Tailspin - Space Game'
               appName: '$(WebAppName)'
               package: '$(Pipeline.Workspace)/drop/$(buildConfiguration)/*.zip'
->>>>>>> c26dd6a62b330b4012f12c44ec04ec180dbd72b5
